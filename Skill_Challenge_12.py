@@ -68,10 +68,10 @@ class User:
         print("Your content has been written")
         wr.close()
         
-    def execute(self, jammies_test):
+    def execute(self, file_to_run):
         if Permission.EXECUTE not in self.permissions:
             return "You do not have permission to execute files"
-        import jammies_test
+        import file_to_run
 
     #user_role as integer should encompass the Permissions (1, 2, 3, 4, 5, 6, 7)
     #if a nonsense user role is entered, we give it a default of 1 (read)
